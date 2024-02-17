@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul  li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul  li a{
+    color: black;
+    font-size: 14px;
+}
+nav ul  li a:hover{
+    color: rgb(255, 92, 160)
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+ .col-2{
+    font-size: 54px;
+ }
+ .col-1 h3{
+    font-size: 30px;
+    color: rgb(112, 112, 112);
+    font-weight: 100px;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    color: rgb(184, 184, 184);
+    font-weight: 100;
+}
+
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+button{
+    width: 140px;
+    padding: 12px 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right, rgb(250, 82, 129), rgb(255, 55, 41));
+    border-radius: 8px;
+    cursor: pointer;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 60%;
+    background: linear-gradient(rgb(255, 71, 160), rgb(255, 97, 100));
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.col-2 .controller{
+    width: 90%;
+}
+
+
+
+
+
+
+
