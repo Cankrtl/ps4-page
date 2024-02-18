@@ -116,7 +116,7 @@ button:hover{
     position: relative;
     display: flex;
     align-items: center;
-    flex-basis: 60%;
+    flex-basis: 45%;
 }
 
 .col-2 .controller{
@@ -129,7 +129,7 @@ button:hover{
     background: linear-gradient(rgb(255, 71, 160), rgb(255, 97, 100));;
     border-radius: 20px 0 0 20px;
     height: 100%;
-    width: 80%;
+    width: 100%;
     z-index: -1; 
     transform: translateX(150px);  
 }
