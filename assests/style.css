@@ -11,7 +11,9 @@
     min-height: 100vh;
     padding-left: 8%;
     padding-right: 8%;
+    overflow: hidden;
 }
+
 .navbar{
     width: 100%;
     display: flex;
@@ -26,6 +28,7 @@
 .menu-icon{
     width: 25px;
     cursor: pointer;
+    display: none;
 }
 
 nav{
@@ -119,10 +122,66 @@ button:hover{
 .col-2 .controller{
     width: 90%;
 }
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgb(255, 71, 160), rgb(255, 97, 100));;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1; 
+    transform: translateX(150px);  
+}
 
+.add-btn{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
 
+.add-btn img{ 
+    width: 35px;
+    margin-bottom: 5px;
+}
 
+.add-btn p{
+    width: 90px;
+   font-size: 14px;
+}
+.social-links{
+    text-align: center;
+}
 
+.social-links img{
+    margin-bottom: 100px;
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgb(255, 82, 160), rgb(255, 87, 90));
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2; 
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+}
 
 
 
